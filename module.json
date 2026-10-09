@@ -1,0 +1,48 @@
+{
+  "id": "tormenta20-melhor-amigo",
+  "title": "Tormenta20: Melhor Amigo",
+  "description": "Ficha dedicada ao Melhor Amigo do treinador, com vínculo de recursos e aparência da Ficha Heroica.",
+  "version": "0.1.4",
+  "authors": [
+    {
+      "name": "Calistenia Studios"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14.367",
+    "maximum": "14"
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/melhor-amigo.css"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "tormenta20",
+        "type": "system",
+        "compatibility": {
+          "minimum": "1.5.015",
+          "verified": "1.6.1"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "tormenta20-ficha-heroica",
+        "type": "module",
+        "compatibility": {
+          "minimum": "1.6.26"
+        },
+        "manifest": "https://github.com/CalisteniaStudios/tormenta20-ficha-heroica/releases/latest/download/module.json"
+      }
+    ]
+  },
+  "url": "https://github.com/CalisteniaStudios/tormenta20-melhor-amigo",
+  "license": "LICENSE",
+  "manifest": "https://github.com/CalisteniaStudios/tormenta20-melhor-amigo/releases/latest/download/module.json",
+  "download": "https://github.com/CalisteniaStudios/tormenta20-melhor-amigo/releases/download/v0.1.4/tormenta20-melhor-amigo-0.1.4.zip"
+}
