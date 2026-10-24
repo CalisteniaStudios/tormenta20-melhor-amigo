@@ -135,7 +135,7 @@ export async function library(actor) {
   const entries=await catalog();
   if(!entries.length)throw new Error('Não encontrei os tipos e truques nos compêndios disponíveis. Você também pode arrastar poderes para a ficha.');
   const body=document.createElement('div'); // DialogV2 requires an attribute-free content element.
-  body.innerHTML='<p>Os poderes são importados dos seus compêndios, mantendo descrições, ícones e efeitos.</p><input type="search" placeholder="Buscar tipo ou truque" aria-label="Buscar tipo ou truque"><div class="t20ma-library-list"></div>';
+  body.innerHTML='<div class="t20ma-library-intro"><p>Os poderes são importados dos seus compêndios, mantendo descrições, ícones e efeitos.</p><img src="modules/tormenta20-melhor-amigo/assets/LOGO.png" alt="Calistenia Studios"></div><input type="search" placeholder="Buscar tipo ou truque" aria-label="Buscar tipo ou truque"><div class="t20ma-library-list"></div>';
   const mount=dialog=>{
   const root=dialog.element.querySelector('.dialog-content');
   const container=root.querySelector('.t20ma-library-list');

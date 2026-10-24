@@ -15,7 +15,7 @@ export async function createCompanion(initial={}) {
     if(!types.length)throw new Error('Os tipos do Melhor Amigo não estão disponíveis. Ative o compêndio de Heróis de Arton e libere o acesso.');
     const skills=creationSkills(CONFIG.T20?.pericias,label=>game.i18n.localize(label));
     const body=document.createElement('div'); // DialogV2 requires an attribute-free content element.
-    body.innerHTML=`<div class="t20ma-dialog-heading"><i class="fas fa-paw"></i><div><small>FORJA HEROICA</small><h2>Um vínculo para toda a aventura</h2></div></div>
+    body.innerHTML=`<div class="t20ma-dialog-heading"><img src="modules/tormenta20-melhor-amigo/assets/LOGO.png" alt="Calistenia Studios"><div><small>FORJA HEROICA</small><h2>Um vínculo para toda a aventura</h2></div></div>
       <p>Crie seu Melhor Amigo no nível do treinador. Os PM e o atributo-chave de suas magias pertencem a ele.</p>
       <div class="t20ma-form-grid"><label>Nome<input name="name" required value="${escape(initial.name||'Melhor Amigo')}"></label><label>Treinador<select name="trainer">${options(owners.map(t=>[t.id,t.name]))}</select></label>
       <label>Tipo<select name="kind">${options(types.map(t=>[t.uuid,t.name.replace('Tipo: ', '')]))}</select></label>

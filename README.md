@@ -1,5 +1,7 @@
 # Tormenta20: Melhor Amigo
 
+<img src="assets/LOGO.png" alt="Calistenia Studios" width="200">
+
 Uma ficha dedicada ao Melhor Amigo da classe Treinador, integrada à Ficha Heroica e com suporte opcional à Forja Heroica.
 
 **Dependência obrigatória:** instale e ative [Tormenta20: Ficha Heroica](https://foundryvtt.com/packages/tormenta20-ficha-heroica), versão 1.6.26 ou posterior. A Forja Heroica é opcional. Requer Foundry VTT 13 ou 14 e o sistema Tormenta20 1.5.015 ou posterior.
